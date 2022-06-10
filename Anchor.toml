@@ -1,0 +1,15 @@
+[features]
+seeds = false
+[programs.devnet]
+counter_example = "4UUnHXMudMNTMvzK2F7CHoL6kZJjm71gEweduDtyAzvg"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/joeca/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+app = "yarn run ts-node app/main.ts"
